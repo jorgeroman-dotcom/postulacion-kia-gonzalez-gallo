@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gracias por postularte | Kia González Gallo</title>
+<meta name="robots" content="noindex">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Meta Pixel | Kia Gonzalez Gallo Ventas -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1770285987282852');
+fbq('track','PageView');
+(function(){
+  var p=new URLSearchParams(location.search);
+  var vac=p.get('vacante')||'';
+  var key='lead_sent_'+location.pathname;
+  try{ if(sessionStorage.getItem(key)) return; sessionStorage.setItem(key,'1'); }catch(e){}
+  fbq('track','Lead',{content_category:'Reclutamiento',content_name:vac||'Postulación Kia González Gallo'});
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1770285987282852&ev=PageView&noscript=1"/></noscript>
+<style>
+:root{--black:#05141F;--red:#EA0029;--white:#fff;--gray:#C7C8CA}
+*{box-sizing:border-box;margin:0}
+body{background:var(--black);color:var(--white);font-family:Poppins,Arial,sans-serif;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 20px}
+.card{max-width:520px;width:100%}
+.kicker{color:var(--red);font-weight:500;font-size:20px}
+h1{font-size:40px;line-height:1.1;font-weight:700;margin:6px 0 20px;letter-spacing:-.5px}
+p{font-size:16px;line-height:1.6;color:#dfe2e5;margin-bottom:14px}
+.brand{margin-bottom:36px;font-weight:700;font-size:15px;letter-spacing:.3px;color:var(--gray)}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="brand">Kia González Gallo</div>
+  <div class="kicker">¡Listo!</div>
+  <h1>Gracias por postularte</h1>
+  <p>Agradecemos tu interés en unirte a nuestro equipo. Recibimos tu solicitud y nuestro equipo de selección la revisará con detenimiento. Te contactaremos pronto.</p>
+  <p>Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos.</p>
+</main>
+</body>
+</html>
